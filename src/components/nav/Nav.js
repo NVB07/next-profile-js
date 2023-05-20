@@ -21,7 +21,7 @@ function Nav() {
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="menu-button"
-                className="h-8 w-8 cursor-pointer md:hidden block absolute right-0 mx-8 my-6"
+                className="h-8 w-8 cursor-pointer md:hidden block absolute right-0 mx-8 my-6 hover:bg-[#252536] rounded"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
