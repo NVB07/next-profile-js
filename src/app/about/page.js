@@ -1,6 +1,6 @@
 function Page() {
     return (
-        <div>
+        <div className="prj">
             <h1>ABOUT</h1>
         </div>
     );

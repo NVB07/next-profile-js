@@ -6,12 +6,27 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    --primary-color: #181825;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}*/
+body {
+    background-image: url(/mainbg.svg);
+    background-size: auto;
+    background-repeat: repeat;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #414153;
+    border-radius: 50px;
+}
+
+.prj {
+    height: 2000px;
+}

@@ -1,7 +1,7 @@
 function Page() {
     return (
         <div>
-            <h1>PROJECT</h1>
+            <h1 className="prj">PROJECT</h1>
         </div>
     );
 }
