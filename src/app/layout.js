@@ -17,6 +17,8 @@ export default function RootLayout({ children }) {
                 <Header />
                 <main className="py-20 px-8">{children}</main>
                 <Footer />
+                <div className="cursor"></div>
+                <div className="cursor2"></div>
             </body>
         </html>
     );

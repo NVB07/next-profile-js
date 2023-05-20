@@ -15,6 +15,8 @@ body {
     background-repeat: repeat;
     color: #fff;
     user-select: none;
+
+    cursor: none;
 }
 
 body::-webkit-scrollbar {
@@ -31,3 +33,8 @@ body::-webkit-scrollbar-thumb {
 .prj {
     height: 2000px;
 }
+
+/* Start https://www.cursors-4u.com */
+* {
+    cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1337.png), auto !important;
+} /* End https://www.cursors-4u.com */
