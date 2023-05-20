@@ -34,7 +34,15 @@ body::-webkit-scrollbar-thumb {
     height: 2000px;
 }
 
-/* Start https://www.cursors-4u.com */
+/* Custom cursor*/
 * {
-    cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1337.png), auto !important;
-} /* End https://www.cursors-4u.com */
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
+}
+a:hover,
+button:hover {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;
+}
+
+input:hover {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur966.cur), auto !important;
+}

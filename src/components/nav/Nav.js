@@ -9,11 +9,11 @@ function Nav() {
         const menu = document.querySelector("#menu");
         tab.forEach((item) => {
             item.onclick = () => {
-                menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "157px");
+                menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "169px");
             };
         });
         button.addEventListener("click", () => {
-            menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "157px");
+            menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "169px");
         });
     }, []);
     return (
@@ -33,17 +33,17 @@ function Nav() {
                 className=" h-0 overflow-hidden md:!h-20 md:overflow-visible px-8 bg-[var(--primary-color)] absolute top-20 w-full border-b border-slate-700 text-xl transition-all  text-white 
                 md:flex md:px-0  md:pt-0 md:top-0 md:border-0 md:relative md:items-center"
             >
-                <li select="tab" className="">
+                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
                     <Link className="md:px-3 py-3 block select-none" href="/">
                         Home
                     </Link>
                 </li>
-                <li select="tab" className="">
+                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
                     <Link className="md:px-3 py-3 block select-none" href="/projects">
                         Project
                     </Link>
                 </li>
-                <li select="tab" className="">
+                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
                     <Link className="md:px-3 py-3 block select-none" href="/about">
                         About
                     </Link>
