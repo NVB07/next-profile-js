@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Nav from "../nav/Nav";
 
 function Header() {
@@ -37,14 +37,17 @@ function Header() {
 
     return (
         <header className=" w-full px-8 h-20 flex fixed top-0 z-10  justify-between  bg-[var(--primary-color)] ">
-            <Link className="flex items-center relative z-20" href="/">
-                <h1 className="text-5xl text-white font-bold ">
-                    <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1cbff0] to-[#f0a]">
-                        NV
-                    </span>
-                    <span className="text-[#fff] text-6xl ">B</span>
-                </h1>
-            </Link>
+            <div className="flex items-center relative z-20">
+                <Link className="" href="/">
+                    <h1 className="text-4xl text-white font-bold ">
+                        <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1cbff0] to-[#f0a]">
+                            NV
+                        </span>
+                        <span className="text-[#fff] text-5xl ">B</span>
+                    </h1>
+                </Link>
+            </div>
+
             <Nav />
         </header>
     );

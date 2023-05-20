@@ -9,11 +9,11 @@ function Nav() {
         const menu = document.querySelector("#menu");
         tab.forEach((item) => {
             item.onclick = () => {
-                menu.classList.toggle("hidden");
+                menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "157px");
             };
         });
         button.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
+            menu.clientHeight > 0 ? (menu.style.height = 0) : (menu.style.height = "157px");
         });
     }, []);
     return (
@@ -30,7 +30,7 @@ function Nav() {
             </svg>
             <ul
                 id="menu"
-                className="hidden px-8 bg-[var(--primary-color)] absolute top-20 w-full border-y border-slate-700 text-xl  text-white 
+                className=" h-0 overflow-hidden md:!h-20 md:overflow-visible px-8 bg-[var(--primary-color)] absolute top-20 w-full border-b border-slate-700 text-xl transition-all  text-white 
                 md:flex md:px-0  md:pt-0 md:top-0 md:border-0 md:relative md:items-center"
             >
                 <li select="tab" className="">
