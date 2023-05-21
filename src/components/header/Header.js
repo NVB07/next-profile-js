@@ -6,7 +6,6 @@ import Nav from "../nav/Nav";
 
 function Header() {
     const pathname = usePathname();
-
     useEffect(() => {
         const tabs = document.querySelectorAll('li[select="tab"]');
         const activeTab = document.querySelector(".active");
@@ -36,8 +35,8 @@ function Header() {
     });
 
     return (
-        <header className=" w-full px-8 h-20 flex fixed top-0 z-10  justify-between  bg-[var(--primary-color)] ">
-            <div className="flex items-center relative z-20">
+        <header className=" w-full px-8 h-20 flex fixed top-0 z-10  justify-between  bg-[var(--primary-color)] max-w-screen-2xl ">
+            <div className="flex items-center relative z-20 ">
                 <Link className="relative z-30" href="/">
                     <h1 className="text-4xl text-white font-bold ">
                         <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1cbff0] to-[#f0a]">

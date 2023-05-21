@@ -14,9 +14,7 @@ body {
     background-size: auto;
     background-repeat: repeat;
     color: #fff;
-    user-select: none;
-
-    cursor: none;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), progress;
 }
 
 body::-webkit-scrollbar {
@@ -35,14 +33,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Custom cursor*/
-* {
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
-}
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+input[type="submit"]:hover,
 a:hover,
+image:hover,
 button:hover {
     cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;
 }
 
-input:hover {
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur966.cur), auto !important;
+.text-slider {
+    width: 0;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing 8s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0%,
+    80%,
+    100% {
+        width: 0;
+    }
+    30%,
+    50% {
+        width: 375px;
+    }
 }

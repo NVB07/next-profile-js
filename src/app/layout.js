@@ -13,12 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={`${inter.className} flex flex-col items-center`}>
                 <Header />
-                <main className="py-20 px-8">{children}</main>
+                <main className="py-20 px-8 w-full max-w-screen-2xl">{children}</main>
                 <Footer />
-                <div className="cursor"></div>
-                <div className="cursor2"></div>
             </body>
         </html>
     );

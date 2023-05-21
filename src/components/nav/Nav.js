@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 function Nav() {
-    const tabsStyle = `hover:scale-105`;
     useEffect(() => {
         const tab = document.querySelectorAll('li[select="tab"]');
         const button = document.querySelector("#menu-button");
@@ -33,17 +32,26 @@ function Nav() {
                 className=" h-0 overflow-hidden md:!h-20 md:overflow-visible px-8 bg-[var(--primary-color)] absolute top-20 w-full border-b border-slate-700 text-xl transition-all  text-white 
                 md:flex md:px-0  md:pt-0 md:top-0 md:border-0 md:relative md:items-center"
             >
-                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
+                <li
+                    select="tab"
+                    className="rounded-lg hover:bg-slate-800 md:hover:bg-transparent md:hover:!text-[#31d2f2] transition-all px-2 md:px-0"
+                >
                     <Link className="md:px-3 py-3 block select-none" href="/">
                         Home
                     </Link>
                 </li>
-                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
+                <li
+                    select="tab"
+                    className="rounded-lg hover:bg-slate-800 md:hover:bg-transparent md:hover:!text-[#31d2f2] transition-all px-2 md:px-0"
+                >
                     <Link className="md:px-3 py-3 block select-none" href="/projects">
                         Project
                     </Link>
                 </li>
-                <li select="tab" className="rounded-lg hover:bg-slate-800 transition-all px-2 md:px-0">
+                <li
+                    select="tab"
+                    className="rounded-lg hover:bg-slate-800 md:hover:bg-transparent md:hover:!text-[#31d2f2] transition-all px-2 md:px-0"
+                >
                     <Link className="md:px-3 py-3 block select-none" href="/about">
                         About
                     </Link>
