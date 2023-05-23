@@ -40,7 +40,7 @@ function Header() {
                 <Link className="relative z-30" href="/">
                     <h1 className="text-4xl text-white font-bold ">
                         <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1cbff0] to-[#f0a]">
-                            NV
+                            Dev
                         </span>
                         <span className="text-[#fff] text-5xl ">B</span>
                     </h1>

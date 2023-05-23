@@ -7,6 +7,7 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
     --primary-color: #181825;
+    --color-blue: #31d2f2;
 }
 
 body {
@@ -14,16 +15,17 @@ body {
     background-size: auto;
     background-repeat: repeat;
     color: #fff;
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), progress;
+    /* cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), progress; */
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
+    height: 6px;
 }
-body::-webkit-scrollbar-track {
-    background-color: var(--primary-color);
+::-webkit-scrollbar-track {
+    background-color: #161622;
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #414153;
     border-radius: 50px;
 }
@@ -39,7 +41,7 @@ input[type="submit"]:hover,
 a:hover,
 image:hover,
 button:hover {
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;
+    /* cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important; */
 }
 
 .text-slider {
